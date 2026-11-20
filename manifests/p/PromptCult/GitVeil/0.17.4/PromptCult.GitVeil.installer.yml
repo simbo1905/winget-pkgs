@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+PackageIdentifier: PromptCult.GitVeil
+PackageVersion: 0.17.4
+Platform:
+- Windows.Desktop
+MinimumOSVersion: 10.0.0.0
+InstallerType: msi
+Scope: machine
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+UpgradeBehavior: install
+ReleaseDate: 2026-11-20
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/prompt-cult/git-veil/releases/download/v0.17.4/git-veil-windows-x86_64.msi
+  InstallerSha256: DC24B41AF7699D5E4DEF8A7385674B88AEC6CD2CC016EB764D83A4609BBCA4FE
+  ProductCode: "{5B33530A-E7EB-4581-83ED-BC00F8586D9C}"
+ManifestType: installer
+ManifestVersion: 1.12.0
